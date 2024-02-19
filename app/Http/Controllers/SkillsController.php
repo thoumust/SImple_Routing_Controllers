@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class SkillsController extends Controller
+{
+    public function show($id) {
+
+        $data = array(
+            "id" => $id,
+            "name" => "multi-tasking"
+        );
+        return view('Skills', ['data' => $data]);
+    }
+}
