@@ -21,5 +21,5 @@ Route::get('/', function () {
 });
 
 Route::get('/AboutMe', [AboutMeController::class, 'index']);
-Route::get('/Skills', [SkillsController::class, 'hobby']);
-Route::get('/Hobbies', [HobbiesController::class, 'skills']);
+Route::get('/Skills', [SkillsController::class, 'skills']);
+Route::get('/Hobbies', [HobbiesController::class, 'hobby']);
