@@ -6,12 +6,14 @@ use Illuminate\Http\Request;
 
 class SkillsController extends Controller
 {
-    public function show($id) {
+    public function index() {
+        $id = 1;
 
-        $data = array(
+        $data = [
             "id" => $id,
-            "name" => "multi-tasking"
-        );
-        return view('Skills', ['data' => $data]);
+            "skills" => "multi-tasking"
+        ];
+
+        return view('Skills', $data);
     }
 }
