@@ -49,7 +49,7 @@
         </a>
        </button>
 
-       <p>I am {{ $data['name'] }}</p>
-       <p>I am {{ $data['age'] }} years old</p>
+       <p>I am {{$data['name']}}</p>
+       <p>I am {{$data['age']}} years old</p>
   </body>
 </html>

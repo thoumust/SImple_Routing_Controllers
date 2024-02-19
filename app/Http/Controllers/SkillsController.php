@@ -6,14 +6,9 @@ use Illuminate\Http\Request;
 
 class SkillsController extends Controller
 {
-    public function index() {
-        $id = 1;
+    public function skills() {
+        $data = 'multi-tasking';
 
-        $data = [
-            "id" => $id,
-            "skills" => "multi-tasking"
-        ];
-
-        return view('Skills', $data);
+        return view('Skills', ['skills' => $data]);
     }
 }

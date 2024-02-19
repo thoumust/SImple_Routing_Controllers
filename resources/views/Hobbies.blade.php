@@ -49,5 +49,8 @@
       </a>
      </button>
 
+     <p>I love {{$hobby}}</p>
+
+
   </body>
 </html>

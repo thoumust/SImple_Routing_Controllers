@@ -6,14 +6,10 @@ use Illuminate\Http\Request;
 
 class HobbiesController extends Controller
 {
-    public function index() {
-        $id = 1;
+    public function hobby() {
 
-        $data = [
-            "id" => $id,
-            "hobby" => "sleeping"
-        ];
+        $data = 'sleeping';
 
-        return view('Hobbies', $data);
+        return view('Hobbies', ['hobby' => $data]);
     }
 }

@@ -49,5 +49,7 @@ a {
     </a>
    </button>
 
+   <p>I can {{$skills}}</p>
+
 </body>
 </html>
